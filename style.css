@@ -1,25 +1,24 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('../images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
     transition: background 0.5s, color 0.5s;
-    background: url('images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
 }
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #222;
+    background: url('../images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
+    filter: brightness(0.6);
     color: #fff;
-    background: url('images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
 }
 
 /* Header */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     padding: 15px;
     color: white;
 }
@@ -70,4 +69,4 @@ input:checked + .slider:before {
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
+    }
