@@ -7,17 +7,19 @@ body {
     padding: 0;
     text-align: center;
     transition: background 0.5s, color 0.5s;
+    background: url('images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
 }
 
 /* Dark Mode */
 body.dark-mode {
     background-color: #222;
     color: #fff;
+    background: url('images/file-BrxSqmvtu6gqLL4H5AJXiP.webp') no-repeat center center/cover;
 }
 
 /* Header */
 header {
-    background: #444;
+    background: rgba(0, 0, 0, 0.7);
     padding: 15px;
     color: white;
 }
