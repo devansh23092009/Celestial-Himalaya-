@@ -5,7 +5,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
     transition: background 0.5s, color 0.5s;
 }
 
@@ -21,6 +20,31 @@ header {
     background: rgba(0, 0, 0, 0.6);
     padding: 15px;
     color: white;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: yellow;
+    color: black;
 }
 
 /* Toggle Switch */
@@ -65,8 +89,16 @@ input:checked + .slider:before {
     background: black;
 }
 
+/* Sections */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
 /* Fade-in Effect */
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    }
+}
