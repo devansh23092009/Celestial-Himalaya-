@@ -1,85 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial Himalaya</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Echoes of the Himalayas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Celestial Himalaya</h1>
-        <label class="switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label>
-    </header>
-    <img src="file-BrxSqmvtu6gqLL4H5AJXiP.webp">
-    <nav>
-        <ul>
-            <li><a href="#overview">Geographical Overview</a></li>
-            <li><a href="#formation">Geological Formation</a></li>
-            <li><a href="#climate">Climate Influence</a></li>
-            <li><a href="#rivers">Rivers</a></li>
-            <li><a href="#biodiversity">Biodiversity</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li><a href="#economy">Economy</a></li>
-            <li><a href="#issues">Environmental Issues</a></li>
-            <li><a href="#politics">Politics</a></li>
-        </ul>
-    </nav>
+<img src="file-BrxSqmvtu6gqLL4H5AJXiP.webp">
+<body><div class="navbar">
+    <ul>
+        <li><a href="#weather" class="active">Weather</a></li>
+        <li><a href="#echoes">Echoes of the Himalayas</a></li>
+    </ul>
+    <div class="mode-toggle">
+        <label for="toggle">🌙</label>
+        <input type="checkbox" id="toggle">
+    </div>
+</div>
 
-    <main class="fade-in">
-        <section id="overview">
-            <h2>1. Geographical Overview</h2>
-            <p>The Himalayas are the world's highest and youngest mountain range...</p>
-        </section>
+<!-- Weather Section -->
+<section id="weather" class="section weather">
+    <div class="content">
+        <h1>Weather in the Himalayas</h1>
+        <p id="weather-info">Loading...</p>
+        <audio autoplay loop>
+            <source src="smooth_background_music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</section>
 
-        <section id="formation">
-            <h2>2. Geological Formation</h2>
-            <p>Formed 50 million years ago due to the collision of the Indian Plate...</p>
-        </section>
+<!-- Echoes of the Himalayas Section -->
+<section id="echoes" class="section echoes">
+    <div class="content">
+        <h1>Echoes of the Himalayas</h1>
+        <p>The Himalayas are a majestic mountain range...</p>
+        <label for="topics">Select a topic:</label>
+        <select id="topics" onchange="showTopic()">
+            <option value="rivers">Rivers</option>
+            <option value="culture">Culture</option>
+            <option value="climate">Climate</option>
+            <option value="forest">Forest</option>
+            <option value="wildlife">Wildlife</option>
+        </select>
+        <div id="topic-content"></div>
+    </div>
+</section>
 
-        <section id="climate">
-            <h2>3. Climate Influence</h2>
-            <p>The Himalayas play a crucial role in shaping South Asia's climate...</p>
-        </section>
+<script src="script.js"></script>
 
-        <section id="rivers">
-            <h2>4. Rivers Originating from the Himalayas</h2>
-            <p>The Himalayas are the source of major river systems...</p>
-        </section>
-
-        <section id="biodiversity">
-            <h2>5. Biodiversity</h2>
-            <p>The Himalayas host diverse ecosystems...</p>
-        </section>
-
-        <section id="culture">
-            <h2>6. Human Settlements and Culture</h2>
-            <p>Indigenous Tribes & Ethnic Groups: Sherpas, Lepchas, Bhutias...</p>
-        </section>
-
-        <section id="economy">
-            <h2>7. Economic Impact</h2>
-            <p>Agriculture, Tourism, and Hydropower are key contributors...</p>
-        </section>
-
-        <section id="issues">
-            <h2>8. Environmental Issues</h2>
-            <p>Climate change, deforestation, and landslides threaten the region...</p>
-        </section>
-
-        <section id="politics">
-            <h2>9. Political and Strategic Importance</h2>
-            <p>Border conflicts, military presence, and trade routes...</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Celestial Himalaya</p>
-    </footer>
-
-    <script src="js/script.js"></script>
 </body>
-                                                                                          </html>
+    </html>
